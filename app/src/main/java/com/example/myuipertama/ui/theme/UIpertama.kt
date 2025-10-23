@@ -1,11 +1,19 @@
 package com.example.myuipertama.ui.theme
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.stringResource
 
 @Composable
 fun ActivitasPertama(modifier : Modifier){
-    Coloumn { modifier = Modifier.padding(top=100.dp)
+    Column ( modifier = Modifier.padding(top=100.dp)
         .fillMaxSize(),
-    horizontalAlignment = Aligment.CenterHorizontally
-        )}
+    horizontalAignment = Aligment.CenterHorizontally
+        ){
+            Text(stringResource(R.string.prodi),
+                fontSize = 35.sp,
+                fontWeight = FontWeight.Bold)
+
+        }
 }
