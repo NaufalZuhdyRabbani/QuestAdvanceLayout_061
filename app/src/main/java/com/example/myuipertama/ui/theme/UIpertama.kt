@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myuipertama.R
 
+
 @Composable
 fun AktivitasPertama(modifier: Modifier = Modifier) {
     Column(
