@@ -90,6 +90,47 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 }
             }
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
+        ) {
+            Row(
+                modifier = Modifier.padding(16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = "Logo UMY",
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(5.dp)
+                )
+
+                Spacer(modifier = Modifier.width(30.dp))
+
+                Column {
+                    Text(
+                        text = stringResource(R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(5.dp)
+                    )
+
+                    Text(
+                        text = stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -97,10 +138,11 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             Text(
                 stringResource(R.string.copy),
                 modifier = Modifier
-                    .align (Alignment.BottomCenter)ads
+                    .align (Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
             )
         }
     }
 }
+
 
